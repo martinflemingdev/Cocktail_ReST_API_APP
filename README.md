@@ -1,2 +1,3 @@
 # Cocktail_API_APP
- Consumed a free web API to create a Java CLI App that allows user to search cocktail recipes by cocktail name, ingredient, or ID as well as display a random cocktail from https://www.thecocktaildb.com/.
+Wrote a java app using a RESTful API that allows users to receive a random cocktail recipe or search cocktail recipes by name, ingredient, or ID from thecocktaildb.com using the Spring Web framework.
+
