@@ -9,7 +9,6 @@ public class CocktailService {
 	public static final String BASE_URL = "https://www.thecocktaildb.com/api/json/v1/1";
 	public RestTemplate restTemplate = new RestTemplate();
 
-
 	// API Calling Methods
 
 	public CocktailAPIObject getListOfCocktailsByName (String name) {
