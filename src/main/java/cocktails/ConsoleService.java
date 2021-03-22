@@ -1,6 +1,8 @@
 package cocktails;
 
 public class ConsoleService {
+	
+	// Menu methods
 
 	public void printMenu() {
 		System.out.println("\n1. Search cocktail recipes by name");
