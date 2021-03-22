@@ -17,7 +17,7 @@ public class CocktailCLI {
 			Scanner scanner = new Scanner(System.in);
 			int menuSelection;
 
-			cocktailService.printMenu();
+			consoleService.printMenu();
 
 			// eliminates format exception
 			if (scanner.hasNextInt()) {
@@ -34,7 +34,7 @@ public class CocktailCLI {
 				CocktailAPIObject searchedCocktail = cocktailService.getListOfCocktailsByName(name);
 
 				if (searchedCocktail != null) {
-					cocktailService.displayCocktailRecipe(searchedCocktail.getDrinks());
+					consoleService.displayCocktailRecipe(searchedCocktail.getDrinks());
 				}
 			}
 			else if ( menuSelection == 2 ) {
@@ -44,7 +44,7 @@ public class CocktailCLI {
 				CocktailAPIObject searchedCocktail = cocktailService.getListOfCocktailsByIngredient(ingredient);
 
 				if (searchedCocktail != null) {
-					cocktailService.displayListOfCocktails(searchedCocktail.getDrinks());
+					consoleService.displayListOfCocktails(searchedCocktail.getDrinks());
 				}
 			} 
 			else if ( menuSelection == 3 ) {
@@ -62,13 +62,13 @@ public class CocktailCLI {
 
 				Cocktail[] cocktailFoundById = cocktailService.getCocktailRecipeById(id).getDrinks();
 				if (cocktailFoundById != null) {
-					cocktailService.displayCocktailRecipe(cocktailFoundById);
+					consoleService.displayCocktailRecipe(cocktailFoundById);
 				}
 			} 
 			else if ( menuSelection == 4 ) {
 
 				Cocktail[] randomCocktail = cocktailService.getRandomCocktail().getDrinks();
-				cocktailService.displayCocktailRecipe(randomCocktail);
+				consoleService.displayCocktailRecipe(randomCocktail);
 
 			}
 			else if ( menuSelection == 5 ) {
