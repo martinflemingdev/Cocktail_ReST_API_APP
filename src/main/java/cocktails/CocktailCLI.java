@@ -13,6 +13,7 @@ public class CocktailCLI {
 		while (true) {
 
 			CocktailService cocktailService = new CocktailService();
+			ConsoleService consoleService = new ConsoleService();
 			Scanner scanner = new Scanner(System.in);
 			int menuSelection;
 
